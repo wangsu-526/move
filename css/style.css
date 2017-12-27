@@ -1,0 +1,841 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: #eee;
+}
+/*首页开始*/
+.container{
+    /*display: flex;
+    justify-content:center;
+    width: 100%;
+    height: 100%;*/
+}
+/*头部*/
+header{
+    width: 10rem;
+    height: 1.173rem;
+    background: #fe5400 url(../img/header-1.png) no-repeat 0.16rem;
+    background-size: 0.853rem 0.62rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 11;
+}
+.header-r {
+    position: relative;
+}
+.header-r a{
+    position: absolute;
+    width: 8.653rem;
+    height: 0.74rem;
+    background: #b52600;
+    color: white;
+    border-radius: 0.126rem;
+    line-height: 0.74rem;
+    top: 0.233rem;
+    right: 0.18rem;
+    font-size: 13px;
+    text-align: center;
+}
+[data-dpr="2"] .header-r a{
+    font-size: 26px;
+}
+[data-dpr="3"] .header-r a{
+    font-size: 39px;
+}
+.header-r .iconfont.icon-fangdajing{
+    font-size: 15px;
+}
+[data-dpr="2"] .header-r .iconfont.icon-fangdajing{
+    font-size: 30px;
+}
+[data-dpr="3"] .header-r .iconfont.icon-fangdajing{
+     font-size: 45px;
+ }
+/*轮播图*/
+.banner{
+    margin-top: 1.173rem;
+}
+.banner img{
+    width: 10rem;
+    height: 3.106rem;
+}
+/*轮播图下边*/
+.vertical-view{
+    width: 10rem;
+    background: #fff;
+}
+.vertical-view ul{
+    display: inline-block;
+    justify-content:space-around;
+    padding-left: 0.5rem;
+}
+.vertical-view ul li{
+    width: 1.78rem;
+    height: 2.21rem;
+    float: left;
+    text-align: center;
+    padding-top: 0.313rem;
+    font-size: 13px;
+    color: rgb(102, 102, 102);
+}
+.vertical-view ul li img{
+    width: 1.78rem;
+}
+[data-dpr="2"] .vertical-view ul li{
+    font-size: 26px;
+}
+[data-dpr="3"] .vertical-view ul li{
+    font-size: 39px;
+}
+/*淘宝头条*/
+.horizontal-view{
+    width: 10rem;
+    height: 0.75rem;
+    background: #fff url(../img/banner-14.png) no-repeat 0.146rem 0.15rem;
+    background-size: 1.8rem 0.52rem;
+    margin-top: 0.03rem;
+    position: relative;
+}
+.horizontal-view .swiper-container{
+    position: absolute;
+    right: 0.13rem;
+    width: 7rem;
+    height: 0.75rem;
+    line-height: 0.75rem;
+}
+.horizontal-view .swiper-container.toutiao .swiper-slide{
+    overflow: hidden;
+    width: 7.5rem;
+    height: 0.75rem;
+}
+.horizontal-view .swiper-container span{
+    border: 0.013rem red solid;
+    padding:  0.01rem 0.085rem;
+    border-radius: 0.103rem;
+    margin-right: 0.2rem;
+    overflow: hidden;
+    font-size: 13px;
+    color: rgb(216, 20, 33);
+}
+[data-dpr="2"] .horizontal-view .swiper-container span{
+    font-size: 26px;
+}
+[data-dpr="3"] .horizontal-view .swiper-container span{
+    font-size: 39px;
+}
+/*淘抢购*/
+.horizontal-1{
+    background: #fff;
+    width: 10rem;
+    margin-top: 0.2rem;
+    height:5rem!important;
+}
+.horizontal-1 .horizontal-11{
+    position: relative;
+}
+.horizontal-1 .horizontal-11 .horizontal-11-l{
+    background: url("../img/banner-15.jpg") no-repeat;
+    height: 5.047rem;
+    width: 3.815rem;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0;
+    border-right: rgb(232, 232, 232) solid 0.013rem;
+}
+.horizontal-1 .horizontal-11 .horizontal-11-r{
+    width: 6.188rem;
+    height: 2.313rem;
+    position: absolute;
+    right:0;
+}
+.horizontal-1 .horizontal-11 .horizontal-11-r .horzontal-11-t div:nth-child(1){
+    background: url("../img/banner-16.jpg") no-repeat;
+    background-size: 100% 100%;
+    width: 3.044rem;
+    height: 2.313rem;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.horizontal-1 .horizontal-11 .horizontal-11-r .horzontal-11-t div:nth-child(2){
+    background: url("../img/banner-17.png") no-repeat;
+    background-size: 100% 100%;
+    width: 3.044rem;
+    height: 2.313rem;
+    position: absolute;
+    top:0;
+    right: 0;
+}
+.horizontal-1 .horizontal-11 .horizontal-11-r .horzontal-11-b div:nth-child(1){
+    background: url("../img/banner-18.jpg") no-repeat;
+    background-size: 100% 100%;
+    width: 3.044rem;
+    height: 2.719rem;
+    position: absolute;
+    top:2.313rem;
+    left: 0;
+    border-right: rgb(232, 232, 232) solid 0.013rem;
+    border-top: rgb(232, 232, 232) solid 0.013rem;
+}
+.horizontal-1 .horizontal-11 .horizontal-11-r .horzontal-11-b div:nth-child(2){
+    background: url("../img/banner-19.png") no-repeat;
+    background-size: 100% 100%;
+    width: 3.044rem;
+    height: 2.719rem;
+    position: absolute;
+    top:2.313rem;
+    right: 0;
+    border-top: rgb(232, 232, 232) solid 0.013rem;
+}
+/*超实惠*/
+.horizontal-2,.horizontal-3,.horizontal-4{
+    width: 10rem;
+    background: #fff;
+    margin-top: 0.2rem;
+    height: 6.766rem!important;
+}
+.horizontal-2-add{
+    display: block;
+    width: 10rem;
+    text-align: center;
+    height: 0.844rem;
+    line-height: 0.844rem;
+    color: rgb(209, 9, 9);
+    font-size: 28px;
+}
+.horizontal-2 .horizontal-2-add .tubiao{
+    background: url("../img/banner-51.png") no-repeat;
+    background-size: contain;
+    width: 0.422rem;
+    height: 0.422rem;
+    display: block;
+    position: absolute;
+    left: 3.8rem;
+    margin-top: 0.23rem;
+}
+.horizontal-2 .horizontal-21 div,.horizontal-3 .horizontal-31 div,.horizontal-4 .horizontal-41 div{
+    float: left;
+}
+.horizontal-2 .horizontal-21 .horizontal-2-t div:first-child{
+     width: 3.828rem;
+     height: 2.916rem;
+     background: url(../img/banner-20.jpg) no-repeat;
+     background-size: 100% 100%;
+    border-top: rgb(232, 232, 232) solid 0.013rem;
+    border-right: rgb(232, 232, 232) solid 0.013rem;
+ }
+.horizontal-2 .horizontal-21 .horizontal-2-t div:nth-child(2){
+    width: 2.041rem;
+    height: 2.916rem;
+    background: url(../img/banner-21.png) no-repeat;
+    background-size: 100% 100%;
+    border-top: rgb(232, 232, 232) solid 0.013rem;
+    border-right: rgb(232, 232, 232) solid 0.013rem;
+}
+.horizontal-2 .horizontal-21 .horizontal-2-t div:nth-child(3){
+    width: 2.041rem;
+    height: 2.916rem;
+    background: url(../img/banner-22.png) no-repeat;
+    background-size: 100% 100%;
+    border-top: rgb(232, 232, 232) solid 0.013rem;
+    border-right: rgb(232, 232, 232) solid 0.013rem;
+}
+.horizontal-2 .horizontal-21 .horizontal-2-t div:nth-child(4){
+    width: 2.041rem;
+    height: 2.916rem;
+    background: url(../img/banner-23.jpg) no-repeat;
+    background-size: 100% 100%;
+    border-top: rgb(232, 232, 232) solid 0.013rem;
+}
+.horizontal-2 .horizontal-21 .horizontal-2-b div:first-child{
+    width: 3.828rem;
+    height: 2.916rem;
+    background: url(../img/banner-24.png) no-repeat;
+    background-size: 100% 100%;
+    border-top: rgb(232, 232, 232) solid 0.013rem;
+    border-right: rgb(232, 232, 232) solid 0.013rem;
+}
+.horizontal-2 .horizontal-21 .horizontal-2-b div:nth-child(2){
+    width: 2.041rem;
+    height: 2.916rem;
+    background: url(../img/banner-25.jpg) no-repeat;
+    background-size: 100% 100%;
+    border-top: rgb(232, 232, 232) solid 0.013rem;
+    border-right: rgb(232, 232, 232) solid 0.013rem;
+}
+.horizontal-2 .horizontal-21 .horizontal-2-b div:nth-child(3){
+    width: 2.041rem;
+    height: 2.916rem;
+    background: url(../img/banner-26.jpg) no-repeat;
+    background-size: 100% 100%;
+    border-top: rgb(232, 232, 232) solid 0.013rem;
+    border-right: rgb(232, 232, 232) solid 0.013rem;
+}
+.horizontal-2 .horizontal-21 .horizontal-2-b div:nth-child(4){
+    width: 2.041rem;
+    height: 2.916rem;
+    background: url(../img/banner-27.png) no-repeat;
+    background-size: 100% 100%;
+    border-top: rgb(232, 232, 232) solid 0.013rem;
+}
+/*天猫必逛*/
+.horizontal-3 .horizontal-2-add .tubiao{
+    background: url("../img/banner-52.png") no-repeat;
+    background-size: contain;
+    width: 0.422rem;
+    height: 0.422rem;
+    display: block;
+    position: absolute;
+    left: 3.6rem;
+    margin-top: 0.23rem;
+}
+.horizontal-3 .horizontal-31 .horizontal-3-t div:first-child{
+    width: 4.984rem;
+    height: 2.922rem;
+    background: url(../img/banner-28.png) no-repeat;
+    background-size: 100% 100%;
+    border-top: rgb(232, 232, 232) solid 0.013rem;
+    border-right: rgb(232, 232, 232) solid 0.013rem;
+}
+.horizontal-3 .horizontal-31 .horizontal-3-t div:nth-child(2){
+    width: 4.984rem;
+    height: 2.922rem;
+    background: url(../img/banner-29.png) no-repeat;
+    background-size: 100% 100%;
+    border-top: rgb(232, 232, 232) solid 0.013rem;
+}
+.horizontal-3 .horizontal-31 .horizontal-3-b div:first-child{
+    width: 2.484rem;
+    height: 2.938rem;
+    background: url(../img/banner-30.png) no-repeat;
+    background-size: 100% 100%;
+    border-top: rgb(232, 232, 232) solid 0.013rem;
+    border-right: rgb(232, 232, 232) solid 0.013rem;
+}
+.horizontal-3 .horizontal-31 .horizontal-3-b div:nth-child(2){
+    width: 2.484rem;
+    height: 2.938rem;
+    background: url(../img/banner-31.jpg) no-repeat;
+    background-size: 100% 100%;
+    border-top: rgb(232, 232, 232) solid 0.013rem;
+    border-right: rgb(232, 232, 232) solid 0.013rem;
+}
+.horizontal-3 .horizontal-31 .horizontal-3-b div:nth-child(3){
+    width: 2.484rem;
+    height: 2.938rem;
+    background: url(../img/banner-32.jpg) no-repeat;
+    background-size: 100% 100%;
+    border-top: rgb(232, 232, 232) solid 0.013rem;
+    border-right: rgb(232, 232, 232) solid 0.013rem;
+}
+.horizontal-3 .horizontal-31 .horizontal-3-b div:nth-child(4){
+    width: 2.484rem;
+    height: 2.938rem;
+    background: url(../img/banner-33.jpg) no-repeat;
+    background-size: 100% 100%;
+    border-top: rgb(232, 232, 232) solid 0.013rem;
+}
+/*特色好货*/
+.horizontal-4 .horizontal-2-add .tubiao{
+    background: url("../img/banner-53.png") no-repeat;
+    background-size: contain;
+    width: 0.422rem;
+    height: 0.422rem;
+    display: block;
+    position: absolute;
+    left: 3.6rem;
+    margin-top: 0.23rem;
+}
+.horizontal-4 .horizontal-41 .horizontal-4-t div:first-child{
+    width: 3.828rem;
+    height: 2.916rem;
+    background: url(../img/banner-34.png) no-repeat;
+    background-size: 100% 100%;
+    border-top: rgb(232, 232, 232) solid 0.013rem;
+    border-right: rgb(232, 232, 232) solid 0.013rem;
+}
+.horizontal-4 .horizontal-41 .horizontal-4-t div:nth-child(2){
+    width: 2.041rem;
+    height: 2.916rem;
+    background: url(../img/banner-35.jpg) no-repeat;
+    background-size: 100% 100%;
+    border-top: rgb(232, 232, 232) solid 0.013rem;
+    border-right: rgb(232, 232, 232) solid 0.013rem;
+}
+.horizontal-4 .horizontal-41 .horizontal-4-t div:nth-child(3){
+    width: 2.041rem;
+    height: 2.916rem;
+    background: url(../img/banner-36.png) no-repeat;
+    background-size: 100% 100%;
+    border-top: rgb(232, 232, 232) solid 0.013rem;
+    border-right: rgb(232, 232, 232) solid 0.013rem;
+}
+.horizontal-4 .horizontal-41 .horizontal-4-t div:nth-child(4){
+    width: 2.041rem;
+    height: 2.916rem;
+    background: url(../img/banner-37.png) no-repeat;
+    background-size: 100% 100%;
+    border-top: rgb(232, 232, 232) solid 0.013rem;
+}
+.horizontal-4 .horizontal-41 .horizontal-4-b div:first-child{
+    width: 3.828rem;
+    height: 2.916rem;
+    background: url(../img/banner-38.png) no-repeat;
+    background-size: 100% 100%;
+    border: rgb(232, 232, 232) solid 0.013rem;
+    border-left:none;
+}
+.horizontal-4 .horizontal-41 .horizontal-4-b div:nth-child(2){
+    width: 2.041rem;
+    height: 2.916rem;
+    background: url(../img/banner-39.png) no-repeat;
+    background-size: 100% 100%;
+    border: rgb(232, 232, 232) solid 0.013rem;
+    border-left:none;
+}
+.horizontal-4 .horizontal-41 .horizontal-4-b div:nth-child(3){
+    width: 2.041rem;
+    height: 2.916rem;
+    background: url(../img/banner-40.png) no-repeat;
+    background-size: 100% 100%;
+    border: rgb(232, 232, 232) solid 0.013rem;
+    border-left:none;
+}
+.horizontal-4 .horizontal-41 .horizontal-4-b div:nth-child(4){
+    width: 2.041rem;
+    height: 2.916rem;
+    background: url(../img/banner-41.jpg) no-repeat;
+    background-size: 100% 100%;
+    border-top: rgb(232, 232, 232) solid 0.013rem;
+    border-bottom: rgb(232, 232, 232) solid 0.013rem;
+}
+/*更多服务*/
+.horizontal-5{
+    width: 10rem;
+    height: 3rem;
+    background: #fff;
+    clear: both;
+}
+.horizontal-5 .horizontal-5-left{
+    float: left;
+    background: url("../img/banner-49.png") no-repeat;
+    background-size: 100% 100%;
+    width: 5rem;
+    height: 0.953rem;
+}
+.horizontal-5 .horizontal-5-right{
+    float: right;
+    width: 4.5rem;
+    height: 0.953rem;
+    text-align: right;
+    font-size: 13px;
+    line-height: 0.953rem;
+    padding-right: 0.5rem;
+    color: rgb(102, 102, 102);
+}
+[data-dpr="2"] .horizontal-5 .horizontal-5-right{
+    font-size: 26px;
+}
+[data-dpr="3"] .horizontal-5 .horizontal-5-right{
+     font-size: 39px;
+ }
+.horizontal-5 .horizontal-5-right i{
+    color: orangered;
+}
+.horizontal-5 .horizontal-5-bottom{
+    clear: both;
+    width: 10rem;
+    height: 2rem;
+    background: url("../img/banner-50.jpg") no-repeat;
+    background-size: 100% 100%;
+    display: block;
+}
+/*每日好店*/
+.horizontal-6{
+    width: 10rem;
+    background: #fff;
+    height: 5.473rem;
+    margin-top: 0.15rem;
+}
+.horizontal-6 .horizontal-6-p{
+    width: 9.55rem;
+    border-left: 0.2rem solid rgb(255, 155, 67);
+    height: 0.969rem;
+    font-size: 15px;
+    line-height: 0.969rem;
+    padding-left: 0.25rem;
+    position: relative;
+    border-top: rgb(232, 232, 232) solid 0.026rem;
+    border-bottom: rgb(232, 232, 232) solid 0.026rem;
+}
+[data-dpr="2"] .horizontal-6 .horizontal-6-p{
+    font-size: 30px;
+}
+[data-dpr="3"] .horizontal-6 .horizontal-6-p{
+    font-size: 45px;
+}
+.horizontal-6 .horizontal-6-p .haodian{
+    position: absolute;
+    left:0;
+    width: 4.8rem;
+    display: block;
+}
+.horizontal-6 .horizontal-6-p .gengduo{
+    position: absolute;
+    right:0;
+    width: 5rem;
+    height: 0.969rem;
+    text-align: right;
+    display: block;
+}
+.horizontal-6 .horizontal-6-p .gengduo span{
+    background: orangered;
+    color: #fff;
+    width: 0.5rem;
+    height: 0.4rem;
+    line-height: 0.3rem;
+    margin-right: 0.213rem;
+    text-align: center;
+    border-radius: 0.1rem;
+    display: inline-block;
+    font-size: 30px;
+}
+.horizontal-6 .horizontal-6-left,.horizontal-6 .horizontal-6-right{
+    width: 4.813rem;
+    height: 3.7rem;
+    position: relative;
+}
+.horizontal-6 .horizontal-6-left{
+    float: left;
+    margin-left: 0.15rem;
+}
+.horizontal-6 .horizontal-6-right{
+    float: right;
+    margin-right: 0.15rem;
+}
+.horizontal-6 .horizontal-6-left div:nth-child(1){
+    width: 3.125rem;
+    height: 3.188rem;
+    background: url("../img/banner-43.jpg") no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.horizontal-6 .horizontal-6-left div:nth-child(2){
+    width: 1.563rem;
+    height: 1.563rem;
+    background: url("../img/banner-44.jpg") no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.horizontal-6 .horizontal-6-left div:nth-child(3){
+    width: 1.563rem;
+    height: 1.563rem;
+    background: url("../img/banner-45.jpg") no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    top: 1.563rem;
+}
+.horizontal-6 .horizontal-6-right div:nth-child(1){
+    width: 3.125rem;
+    height: 3.188rem;
+    background: url("../img/banner-46.jpg") no-repeat;
+    background-size:contain;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.horizontal-6 .horizontal-6-right div:nth-child(2){
+    width: 1.563rem;
+    height: 1.563rem;
+    background: url("../img/banner-47.jpg") no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.horizontal-6 .horizontal-6-right div:nth-child(3){
+    width: 1.563rem;
+    height: 1.563rem;
+    background: url("../img/banner-48.jpg") no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    top: 1.563rem;
+}
+.horizontal-6-bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.horizontal-6 .swiper-pagination span{
+    position: absolute;
+    width: 0.2rem;
+    height: 0.2rem;
+    bottom: 0;
+    right:1rem;
+    display: block;
+}
+/*猜你喜欢*/
+.horizontal-7{
+    width: 10rem;
+}
+.horizontal-7 .horizontal-7-p{
+    text-align: center;
+    padding: 0.4rem 0;
+    font-size: 14px;
+    color: rgb(120, 120, 120);
+}
+.horizontal-7 .horizontal-7-p span{
+    background: url("../img/banner-54.png")no-repeat;
+    background-size: 100% 100%;
+    width: 0.531rem;
+    height: 0.516rem;
+    display: block;
+    z-index: 999;
+    position: absolute;
+    left: 3.5rem;
+
+}
+[data-dpr="2"] .horizontal-7 .horizontal-7-p{
+    font-size: 28px;
+}
+[data-dpr="3"] .horizontal-7 .horizontal-7-p{
+    font-size: 28px;
+}
+.horizontal-7 .horizontal-7-p .horizontal-70{
+    color: rgb(51, 51, 51);
+}
+.horizontal-7 .horzontail-7-list{
+    background: #FFF;
+    width: 10rem;
+}
+.horizontal-7 .horzontail-7-list>div{
+    width: 5rem;
+    height: 7.1rem;
+    color: rgb(120, 120, 120);
+    float: left;
+    border-bottom: rgb(232, 232, 232) solid 0.15rem;
+}
+.horizontal-7 .horzontail-7-list .horizontal-711{
+    background: url("../img/banner-55.jpg")no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 5rem;
+}
+.horizontal-7 .horzontail-7-list .horizontal-711.one{
+    background: url("../img/banner-56.jpg")no-repeat;
+}
+.horizontal-7 .horzontail-7-list .horizontal-711.two{
+    background: url("../img/banner-57.jpg")no-repeat;
+}
+.horizontal-7 .horzontail-7-list .horizontal-711.three{
+    background: url("../img/banner-58.jpg")no-repeat;
+}
+.horizontal-7 .horzontail-7-list .horizontal-712{
+    padding: 0.2rem;
+    overflow: hidden;
+    height: 0.7rem;
+    width: 4.6rem;
+}
+.horizontal-7 .horzontail-7-list .horizontal-713{
+    padding: 0.15rem;
+    font-size: 13px;
+    color: rgb(255, 80, 0);
+}
+[data-dpr="2"] .horizontal-7 .horzontail-7-list .horizontal-713{
+    font-size: 26px;
+}
+[data-dpr="2"] .horizontal-7 .horzontail-7-list .horizontal-713{
+    font-size: 39px;
+}
+.horizontal-7 .horzontail-7-list .horizontal-713 span{
+    padding-right: 0.1rem;
+}
+.footer{
+    width: 10rem;
+    height: 3rem;
+    background-color: #4e525e;
+    display: inline-block;
+    padding-top:0.5625rem;
+    position: relative;
+    margin-bottom: 1.01rem;
+}
+.footer ul{
+    display: flex;
+    justify-content: space-around;
+
+}
+.footer ul li{
+    float: left;
+}
+.footer ul li a{
+    display: block;
+    height: 0.9375rem;
+    line-height: 0.9375rem;
+    color: #c3c6ca;
+    border: 2px solid #42454d;
+    background-color: #555965;
+    padding: 0 0.46875rem;
+    border-radius: 0.2rem;
+}
+.footer-p{
+    position: absolute;
+    left: 2.5rem;
+    top: 2.1rem;
+    height: 0.5625rem;
+    text-align: center;
+    color: #c3c6ca;
+    line-height: 0.5625rem;
+    display: inline-flex;
+}
+.footer-p span{
+    background: url("../img/banner-60.png") no-repeat;
+    width: 0.5625rem;
+    height: 0.5625rem;
+    background-size:100% 100%;
+    display: inline-block;
+}
+
+
+footer{
+    width: 10rem;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    display: inline-block;
+    border-top: #eee solid 0.02rem;
+    left: 0;
+    z-index: 11;
+}
+footer ul{
+    padding-left: 0.2rem;
+}
+footer ul li{
+    float: left;
+    width: 1.9rem;
+    height: 1.08rem;
+    line-height: 0.55rem;
+    text-align: center;
+    font-size: 13px;
+}
+footer ul li span{
+    display: block;
+}
+[data-dpr="2"] footer ul li{
+    font-size: 26px;
+}
+[data-dpr="3"] footer ul li{
+    font-size: 39px;
+}
+footer .iconfont{
+    font-size: 15px;
+}
+[data-dpr="2"] footer .iconfont{
+    font-size: 30px;
+}
+[data-dpr="3"] footer .iconfont{
+    font-size: 45px;
+}
+/*首页结束*/
+
+
+
+
+
+/*详情页开始*/
+/*details-header*/
+.details-header{
+    text-align: center;
+    width: 10rem;
+    height: 0.9rem;
+    line-height: 0.9rem;
+}
+.details-header h1{
+    font-size: 9px;display: inline-block;
+}
+[data-dpr="2"] .details-header h1{
+    font-size: 18px;
+}
+[data-dpr="2"] .details-header h1{
+    font-size: 27px;
+}
+.details-header .iconfont.icon-gengduo{
+    position: absolute;
+    right: 0.5rem;
+    color: #5F646E;
+}
+/*
+details-banner*/
+.details-banner{
+    width: 10rem;
+    height: 7.5rem;
+    background: #eee;
+}
+.details-banner .swiper-slide{
+    height: 5.866rem;
+    width: 3.8rem;
+    text-align: center;
+    background: #fff;
+}
+.details-banner .swiper-slide img{
+    width: 3.866rem;
+    height: 4rem;
+}
+.wiper-slide-text{
+    background: #fff;
+    width: 3.8rem;
+    height: 1.8rem;
+}
+.wiper-slide-text .title{
+    font-size: 10px;
+    color: #051B28;
+}
+[data-dpr="2"] .wiper-slide-text .title{
+    font-size: 20px;
+}
+[data-dpr="3"] .wiper-slide-text .title{
+    font-size: 30px;
+}
+.wiper-slide-text .desc{
+    font-size: 7px;
+    color: #999;
+}
+[data-dpr="2"] .wiper-slide-text .desc{
+    font-size: 14px;
+}
+[data-dpr="3"] .wiper-slide-text .desc{
+    font-size: 21px;
+}
+/*
+details-nav部分*/
+.details-nav{
+    width: 10rem;
+    overflow: hidden;
+}
+.details-nav .swiper-slide{
+    width: 2rem!important;
+    color: #fff;
+    background-image: linear-gradient(to bottom right,#37DBF4 0,#09AEF1 100%);
+    margin-right: 0!important;
+    height: 1.5rem!important;
+    line-height: 1rem!important;
+    text-align: center;
+}
+.details-nav .swiper-slide img {
+    width: 0.64rem;
+    height: 0.32rem;
+    display: block;
+    margin: auto;
+    padding-top: 0.2rem;
+}
+.details-nav .swiper-slide .text{
+    line-height: 0.5rem;
+    height: 0.5rem;
+}

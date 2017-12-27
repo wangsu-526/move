@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>淘宝网触屏版</title>
+    <script src="js/flexible.js"></script>
+    <script src="js/flexible_css.js"></script>
+    <script src="js/iconfont.js"></script>
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style type="text/css">
+        .icon {
+            width: 1.5em;
+            height: 1.5em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body> <!--onload="leftTimer()"-->
+<div class="container">
+<!--头部-->
+<header>
+    <div class="header-r">
+        <a href="javascript:;">
+            <i class="iconfont icon-fangdajing"></i>
+            寻找宝贝店铺
+        </a>
+    </div>
+</header>
+<!--轮播图-->
+<link rel="stylesheet" href="css/swiper.min.css">
+<div class="banner">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/banner-1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/banner-2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/banner-3.jpg" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+<script src="js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.banner .swiper-container', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        }
+    });
+</script>
+<!--轮播图下边-->
+<div class="vertical-view">
+    <ul>
+        <li>
+            <img src="img/banner-4.png" alt="">
+            <span>天猫</span>
+        </li>
+        <li>
+            <img src="img/banner-5.png" alt="">
+            <span>聚划算</span></li>
+        <li>
+            <img src="img/banner-6.png" alt="">
+            <span>天猫国际</span></li>
+        <li>
+            <img src="img/banner-7.png" alt="">
+            <span>外卖</span></li>
+        <li>
+            <img src="img/banner-8.png" alt="">
+            <span>天猫超市</span></li>
+        <li>
+            <img src="img/banner-9.png" alt="">
+            <span>充值中心</span></li>
+        <li>
+            <img src="img/banner-10.png" alt="">
+            <span>飞猪旅行</span></li>
+        <li>
+            <img src="img/banner-11.png" alt="">
+            <span>领金币</span></li>
+        <li>
+            <img src="img/banner-12.png" alt="">
+            <span>拍卖</span></li>
+        <li>
+            <img src="img/banner-13.png" alt="">
+            <span>分类</span></li>
+    </ul>
+</div>
+<!--淘宝头条-->
+<link rel="stylesheet" href="css/swiper.min.css">
+<div class="horizontal-view">
+    <div class="swiper-container toutiao">
+        <div class="swiper-wrapper ">
+            <div class="swiper-slide"><span>汽车</span>纯电动，100公里续航，售价4万元买吗</div>
+            <div class="swiper-slide"><span>母婴</span>婆婆有没有把你当自家人，这3点就能</div>
+            <div class="swiper-slide"><span>手机</span>魅族全面屏曝：侧面指纹，坐实新</div>
+            <div class="swiper-slide"><span>星座</span>这些星座见不得别人好！</div>
+            <div class="swiper-slide"><span>围观</span>你适合扎发还是散发，就看有没有这些</div>
+        </div>
+    </div>
+</div>
+<script>
+    var swiper = new Swiper('.horizontal-view .swiper-container', {
+        direction: 'vertical',
+        loop:true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+        },
+        pagination: {
+            el: '.swiper-pagination'
+        }
+    });
+</script>
+
+
+<div class="horizontal-1">
+    <div class="horizontal-11" >
+        <div id="timer"></div>
+        <div class="horizontal-11-l"></div>
+        <div class="horizontal-11-r">
+            <div class="horzontal-11-t">
+                <div></div>
+                <div></div>
+            </div>
+            <div class="horzontal-11-b">
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <!--<script language="javascript" type="text/javascript">
+        function leftTimer(hour,minute,second){
+            var leftTime = (new Date(hour,minute,second)) - (new Date()); //计算剩余的毫秒数
+            var hours = parseInt(leftTime / 1000 / 60 / 60 % 24 , 10); //计算剩余的小时
+            var minutes = parseInt(leftTime / 1000 / 60 % 60, 10);//计算剩余的分钟
+            var seconds = parseInt(leftTime / 1000 % 60, 10);//计算剩余的秒数
+            hours = checkTime(hours);
+            minutes = checkTime(minutes);
+            seconds = checkTime(seconds);
+            setInterval("leftTimer(0,43,30)",1000);
+            document.getElementById("timer").innerHTML = hours+"小时" + minutes+"分"+seconds+"秒";
+        }
+        function checkTime(i){ //将0-9的数字前面加上0，例1变为01
+            if(i<10)
+            {
+                i = "0" + i;
+            }
+            return i;
+        }
+    </script>-->
+    <div class="horizontal-12">
+        <div class="horizontal-12-t"></div>
+        <div class="horizontal-12-b"></div>
+    </div>
+</div>
+<!--超实惠-->
+<div class="horizontal-2">
+    <div class="horizontal-2-add">
+        <div class="tubiao"></div>
+        <div class="wenzi">超实惠</div>
+    </div>
+    <div class="horizontal-21">
+        <div class="horizontal-2-t">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="horizontal-2-b">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+<!--天猫必逛-->
+<div class="horizontal-3">
+    <div class="horizontal-2-add">
+        <div class="tubiao"></div>
+        <div class="wenzi">天猫必逛</div>
+    </div>
+    <div class="horizontal-31">
+        <div class="horizontal-3-t">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="horizontal-3-b">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+<!--特色好货-->
+<div class="horizontal-4">
+    <div class="horizontal-2-add">
+        <div class="tubiao"></div>
+        <div class="wenzi">特色好货</div>
+    </div>
+    <div class="horizontal-41">
+        <div class="horizontal-4-t">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="horizontal-4-b">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+<!--更多服务-->
+<div class="horizontal-5">
+    <div class="horizontal-5-left"></div>
+    <div class="horizontal-5-right">
+        <span>更多服务</span>
+        <i>></i>
+    </div>
+    <div class="horizontal-5-bottom"></div>
+</div>
+<!--每日好店-->
+<link rel="stylesheet" href="css/swiper.min.css">
+<div class="horizontal-6">
+    <div class="horizontal-6-p">
+        <div class="haodian">每日好店</div>
+        <div class="gengduo">
+            更多
+            <span>></span>
+        </div>
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="horizontal-6-left">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div class="horizontal-6-bottom">今日推荐</div>
+                </div>
+                <div class="horizontal-6-right">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div class="horizontal-6-bottom">有逼格</div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="horizontal-6-left">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div class="horizontal-6-bottom">今日推荐</div>
+                </div>
+                <div class="horizontal-6-right">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div class="horizontal-6-bottom">有逼格</div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination add"></div>
+    </div>
+</div>
+<!-- Swiper JS -->
+<script src="js/swiper.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+        var swiper = new Swiper('.horizontal-6 .swiper-container', {
+            pagination: {
+                el: '.swiper-pagination'
+            }
+        });
+    </script>
+
+
+<!--猜你喜欢-->
+<div class="horizontal-7">
+    <div class="horizontal-7-p">
+        <p class="horizontal-70">
+            <span></span>
+            猜你喜欢
+        </p>
+        <p>实时推荐最适合你的宝贝</p>
+    </div>
+    <div class="horzontail-7-list">
+        <div class="horizontal-71">
+            <div class="horizontal-711"></div>
+            <div class="horizontal-712">[为你推荐]天天特价五件套衣服防尘罩挂衣袋无纺布收纳袋西服皮草罩大衣套</div>
+            <div class="horizontal-713"><span>￥</span>23.0</div>
+        </div>
+        <div class="horizontal-72">
+            <div class="horizontal-711 one"></div>
+            <div class="horizontal-712">[为你推荐]亏本发2只自来水过滤器嘴 家用水龙头净水器头 厨房自来水滤水器</div>
+            <div class="horizontal-713"><span>￥</span>23.0</div>
+        </div>
+        <div class="horizontal-73">
+            <div class="horizontal-711 two"></div>
+            <div class="horizontal-712">[为你推荐]雅火暖手袋 暖 贴 宝宝贴 热 贴暖手贴暖手袋小号暖手宝</div>
+            <div class="horizontal-713"><span>￥</span>23.0</div>
+        </div>
+        <div class="horizontal-74">
+            <div class="horizontal-711 three"></div>
+            <div class="horizontal-712">[为你推荐]木纤维双层洗碗巾去污不沾油免洗洁精防水手套抹布</div>
+            <div class="horizontal-713"><span>￥</span>23.0</div>
+        </div>
+    </div>
+</div>
+   <!-- footer部分-->
+<div class="footer">
+    <ul>
+        <li><a href="">登录</a></li>
+        <li><a href="">注册</a></li>
+        <li><a href="">电脑版</a></li>
+        <li><a href="">用户反馈</a></li>
+    </ul>
+    <div class="footer-p">
+        <span></span>2016 浙 B2-20080224 服务中心
+    </div>
+</div>
+<!--屏底部-->
+    <footer>
+        <ul>
+            <li>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-shouye"></use>
+                </svg>
+                <span>首页</span>
+            </li>
+            <li>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-buoumaotubiao39"></use>
+                </svg>
+                <span>物流</span>
+            </li>
+            <li>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-cart-copy"></use>
+                </svg>
+                <span>购物车</span>
+            </li>
+            <li>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-wodetaobao"></use>
+                </svg>
+                <span>我的淘宝</span>
+            </li>
+            <li>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-gengduo"></use>
+                </svg>
+                <span>更多</span>
+            </li>
+        </ul>
+    </footer>
+</div>
+</body>
+</html>
