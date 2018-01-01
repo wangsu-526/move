@@ -83,6 +83,9 @@ header{
 [data-dpr="3"] .vertical-view ul li{
     font-size: 39px;
 }
+.vertical-view ul li a{
+    color: #000;
+}
 /*淘宝头条*/
 .horizontal-view{
     width: 10rem;
