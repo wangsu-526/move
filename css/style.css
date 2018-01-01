@@ -811,7 +811,7 @@ details-banner*/
     font-size: 21px;
 }
 /*
-details-nav部分*/
+/*details-nav部分*!
 .details-nav{
     width: 10rem;
     overflow: hidden;
@@ -835,4 +835,492 @@ details-nav部分*/
 .details-nav .swiper-slide .text{
     line-height: 0.5rem;
     height: 0.5rem;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*classification部分*/
+
+.classification{
+    width: 10rem;
+    height: 1.675rem;
+    position: relative;
+    background-color: rgb(255, 223, 0);
+    background-image: linear-gradient(90deg, rgb(255, 223, 0) 0%, rgb(255, 203, 21) 100%);
+}
+.classification_inter{
+    width: 10rem;
+    height: 1.675rem;
+    position: fixed;
+    z-index:9;
+}
+.classification_inter li{
+    float: left;
+    height: 1.675rem;
+}
+.classification_inter span{
+    font-size: 0.35rem;
+    position: absolute;
+    left: 0.4rem;
+    top: 1rem;
+}
+.classification_inter i{
+    font-size: 0.5rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.3rem;
+}
+.classification_inter i.icon-woxihuande{
+    font-size: 0.5rem;
+    position: absolute;
+    left: 0.9rem;
+    top: 0.3rem;
+}
+.classification_inter .classification_one{
+    width: 2.05rem;
+    text-align: center;
+}
+.classification_inter .classification_one,
+.classification_inter .classification_two,
+.classification_inter .classification_three,
+.classification_inter .classification_four,
+.classification_inter .classification_five{
+    position: relative;
+}
+.classification_inter .classification_two,
+.classification_inter .classification_three,
+.classification_inter .classification_four,
+.classification_inter .classification_five{
+    width: 1.725rem;
+}
+.classification_inter .classification_six{
+    width: 1.05rem;
+    position: relative;
+}
+.classification_six img:nth-of-type(1){
+    width: 0.125rem;
+    height: 0.925rem;
+    position: absolute;
+    right: 1.325rem;
+    top: 0.375rem;
+}
+.classification_six img:nth-of-type(2){
+    width: 0.45rem;
+    height: 0.45rem;
+    position: absolute;
+    right: 0.475rem;
+    top: 0.6rem;
+}
+.background1{
+    width: 10rem;
+    height: 16.65rem;
+    background: #f4f4f4;
+}
+.classification .swiper-container{
+    width: 8.5rem!important;
+    margin: 0!important;
+}
+.classification .swiper-container .swiper-wrapper{
+    position: absolute;
+    left: -3.5rem;
+}
+.classification .swiper-wrapper .swiper-slide{
+    margin: 0!important;
+    width: 1.8rem!important;
+    border-bottom:0.133rem solid #ff5000!important;
+}
+/*list部分*/
+.list{
+    width: 10rem;
+}
+.list_top{
+    width: 10rem;
+    height: 1.225rem;
+    text-align: center;
+    position: relative;
+}
+.list_top .list_one{
+    position: absolute;
+    top: 0.6rem;
+    height:0.025rem;
+    width: 1.05rem;
+    overflow: hidden;
+    background-color: rgb(68, 68, 68);
+}
+.list_top span{
+    font-size: 0.4rem;
+    position: absolute;
+    left: 4rem;
+    top: 0.3rem;
+    color:rgb(68, 68, 68);
+}
+.list_top .list_left{
+    left: 2.6rem;
+}
+.list_top .list_right{
+    right: 3rem;
+}
+/*list-bottom部分*/
+.list_bottom{
+    width: 10rem;
+    justify-content: space-around;
+    height: 10rem;
+}
+.list_bottom a:hover{
+    text-decoration: none;
+}
+.list_bottom p{
+    font-size: 13px;
+    color: #000000;
+    margin-top: 0.1rem;
+}
+[data-dpr="2"] .list_bottom p{
+    font-size: 26px;
+}
+[data-dpr="3"] .list_bottom p{
+    font-size: 39px;
+}
+.list_bottom div{
+    float: left;
+    width: 2.925rem;
+    height: 3.575rem;
+    background: #fff;
+    margin: 0.2rem;
+    text-align: center;
+}
+.list_bottom div img{
+    width: 2.6rem;
+    height: 2.5rem;
+    padding-top: 0.2rem;
+}
+/*
+nav-list部分*/
+.nav-list{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10rem;
+    height: 15rem;
+    background-color: rgb(255, 223, 0);
+    z-index: 999;
+    display: none;
+}
+.nav-list-1{
+    height:2rem;
+}
+.nav-list-1 .nav-list-p{
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 17px;
+    padding-left: 0.5rem;
+}
+[data-dpr="2"] .nav-list-1 .nav-list-p{
+    font-size: 30px;
+}
+[data-dpr="3"] .nav-list-1 .nav-list-p{
+    font-size: 30px;
+}
+.nav-list .classification-list{
+    justify-content: flex-start;
+}
+.nav-list .classification-list>div{
+    float: left;
+    width: 3.333rem;
+    text-align: center;
+    height: 1.3rem;padding-top: 0.3rem;
+}
+.nav-list .classification-list>div i{
+    font-size:25px;
+    width: 0.3rem;
+    height: 0.3rem;
+
+}
+.nav-list .classification-list>div span{
+    display: block;
+    width: 1.333rem;
+    margin: auto;
+}
+/*infm-header部分*/
+.infm-header{
+    width: 10rem;
+    height: 1.346rem;
+    background: white;
+}
+.infm-header ul{
+    width: 10rem;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.infm-header ul li{
+    width: 3.3rem;
+    float: left;
+    height: 1.346rem;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.346rem;
+}
+.infm-header ul li.active{
+    border-top: 0.046rem red solid;
+}
+[data-dpr="2"] .infm-header ul li{
+    font-size: 26px;
+}
+[data-dpr="3"] .infm-header ul li{
+    font-size: 39px;
+}
+
+/*infm-banner开始*/
+.infm-banner{
+    width: 10rem;
+    display: block;
+}
+.infm-banner .swiper-container .swiper-wrapper img{
+    width: 10rem;
+    display: block;
+}
+.infm-banner .swiper-pagination{
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    line-height: 1rem;
+    opacity: 0.5;
+    margin-left: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+.infm-banner .swiper-pagination-bullet{
+    background: #000;
+}
+.infm-banner-down img{
+    width: 10rem;
+    height: 1.5rem;
+}
+.infm-banner-bottom{
+    width: 10rem;
+    background: white;
+}
+.infm-banner-bottom1{
+    padding: 0.2rem 0.3rem;
+    font-size: 14px;
+}
+[data-dpr="2"] .infm-banner-bottom1{
+    font-size: 28px;
+}
+[data-dpr="3"] .infm-banner-bottom1{
+    font-size: 42px;
+}
+.infm-banner-bottom2{
+    font-size: 20px;
+    color: #FF0036;
+    padding: 0.07rem 0.3rem;
+}
+[data-dpr="2"] .infm-banner-bottom2{
+    font-size: 40px;
+}
+[data-dpr="3"] .infm-banner-bottom2{
+    font-size: 60px;
+}
+.infm-banner-bottom2 span{
+    font-size: 12px;
+    color: #fff;
+    background: #FF0036;
+    padding: 0 0.1rem;
+    margin-left: 0.2rem;
+
+}
+[data-dpr="2"] .infm-banner-bottom2 span{
+    font-size: 24px;
+}
+[data-dpr="3"] .infm-banner-bottom2 span{
+    font-size: 36px;
+}
+.infm-banner-bottom3{
+    font-size: 12px;
+    color: #888;
+    padding: 0 0.3rem;
+}
+.infm-banner-bottom3 span{
+    text-decoration:line-through;
+}
+[data-dpr="2"] .infm-banner-bottom3{
+    font-size: 24px;
+}
+[data-dpr="3"] .infm-banner-bottom3{
+    font-size: 36px;
+}
+.infm-banner-bottom4{
+    font-size: 12px;
+    color: #FF0036;
+    padding: 0.1rem 0.3rem;
+}
+[data-dpr="2"] .infm-banner-bottom4{
+    font-size: 24px;
+}
+[data-dpr="3"] .infm-banner-bottom4{
+    font-size: 36px;
+}
+.infm-banner-bottom5{
+    display: flex;
+    justify-content: space-between;
+    color: #999;
+    padding: 0.1rem 0.3rem;
+}
+.infm-banner-bottom6{
+    height: 1.3rem;
+    line-height: 1.3rem;
+    display: flex;
+    background: #ffdedf;
+    border-bottom: 0.2rem #eee solid;
+}
+.infm-banner-bottom6 img{
+    margin: 0.35rem;
+    height: 0.70rem;
+}
+.infm-banner-bottom7{
+    height: 0.5rem;
+    line-height: 0.5rem;
+    display: flex;
+    position: relative;
+    padding: .5rem 0.3rem;
+}
+.infm-banner-bottom7 img{
+    width: 1.8rem;
+    height: 0.35rem;
+    padding-right: 0.2rem;
+}
+.infm-banner-bottom7 span{
+    position: absolute;
+    right: 0.6rem;
+    border: 0.013rem solid #000;
+    border-radius: 1rem;
+    width: 1rem;
+    text-align: center;
+}
+#infm-banner-bottom8{
+    height: 1.3rem;
+    background: #eee;
+    line-height: 1.3rem;
+    text-align: center;
+}
+.infm-container{
+    margin: auto;
+}
+/*infm-image开始*/
+.infm-image{
+    width: 10rem;
+    background: #fff;
+    position: absolute;
+    top: 21rem;
+}
+.infm-img0,.infm-img01{
+    text-align: center;
+    height: 1rem;
+    line-height: 1rem;
+    border-bottom: 0.2rem solid #eee;
+}
+.infm-img1{
+    width: 9.6rem;
+    border-left: 0.2rem solid red;
+    line-height: 1rem;
+    height: 1rem;
+    padding-left: 0.2rem;
+    font-size: 15px;
+}
+[data-dpr="2"] .infm-img1{
+    font-size: 30px;
+}
+[data-dpr="3"] .infm-img1{
+    font-size: 45px;
+}
+.infm-image img{
+    width: 10rem;
+    display: block;
+}
+/*infm-footer开始*/
+.infm-footer{
+    width: 10rem;
+    height: 1rem;
+    background: white;
+    margin-top: 0.5rem;
+    position: fixed;
+    bottom: 0;
+    z-index: 99;
+}
+.infm-footer-left{
+    width: 5rem;
+    float: left;
+}
+.infm-footer-left ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+.infm-footer-left ul li{
+    width: 1.6rem;
+    display: block;
+    text-align: center;
+    float: left;
+}
+.infm-footer-left ul li i{
+    font-size: 15px;
+}
+[data-dpr="2"] .infm-footer-left ul li i{
+    font-size: 30px;
+}
+[data-dpr="3"] .infm-footer-left ul li i{
+    font-size: 45px;
+}
+.infm-footer-left ul li span{
+    font-size: 13px;
+    display: block;
+}
+[data-dpr="2"] .infm-footer-left ul li span{
+    font-size: 26px;
+}
+[data-dpr="3"] .infm-footer-left ul li span{
+    font-size: 39px;
+}
+.infm-footer-right{
+    width: 5rem;
+    float: left;
+}
+.infm-footer-right ul{
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+.infm-footer-right ul li {
+    float: left;
+    width:2.5rem;
+}
+.infm-footer-right ul li a{
+    display: block;
+    height: 1.2rem;
+    width:2.5rem;
+    text-align: center;
+    line-height: 1rem;
+    color: white;
+    font-size: 13px;
+}
+[data-dpr="2"] .infm-footer-right ul li a{
+    font-size: 26px;
+}
+[data-dpr="3"] .infm-footer-right ul li a{
+    font-size: 39px;
+}
+.infm-footer-right ul li:nth-child(1){
+    background: #ffb03f;
+}
+.infm-footer-right ul li:nth-child(2){
+    background: red;
 }
