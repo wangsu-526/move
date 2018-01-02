@@ -262,7 +262,7 @@ header{
     border-top: rgb(232, 232, 232) solid 0.013rem;
 }
 .horizontal-2 .horizontal-21 .horizontal-2-b div:first-child{
-    width: 3.828rem;
+    width: 3.8rem;
     height: 2.916rem;
     background: url(../img/banner-24.png) no-repeat;
     background-size: 100% 100%;
@@ -327,7 +327,7 @@ header{
     border-right: rgb(232, 232, 232) solid 0.013rem;
 }
 .horizontal-3 .horizontal-31 .horizontal-3-b div:nth-child(2){
-    width: 2.4rem;
+    width: 2.55rem;
     height: 2.938rem;
     background: url(../img/banner-31.jpg) no-repeat;
     background-size: 100% 100%;
@@ -392,7 +392,7 @@ header{
     border-top: rgb(232, 232, 232) solid 0.013rem;
 }
 .horizontal-4 .horizontal-41 .horizontal-4-b div:first-child{
-    width: 3.828rem;
+    width: 3.8rem;
     height: 2.916rem;
     background: url(../img/banner-38.png) no-repeat;
     background-size: 100% 100%;
@@ -515,7 +515,7 @@ header{
     font-size: 30px;
 }
 .horizontal-6 .swiper-slide{
-    width: 10rem;
+    width: 10rem!important;
 }
 .horizontal-6 .horizontal-6-left,.horizontal-6 .horizontal-6-right{
     width: 4.813rem;
